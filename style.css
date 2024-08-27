@@ -1,0 +1,142 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#nav{
+    /* background-color: aqua; */
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px ;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 19px;
+
+}
+#nav-part2 h4 span{
+
+    color: rgb(121, 119, 134);
+    margin-left: 10px;
+
+}
+#nav-part2 h4{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#circle1{
+    
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    
+    
+}
+#circle2{
+    
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+#nav2{
+    /* background-color: rebeccapurple; */
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    gap: 70px;
+    padding: 0px 30px ;
+}
+
+#nav2 h4{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#content{
+    /* background-color: aquamarine; */
+     height: calc(100% - 12%);           /* always give space between operator */
+    width: 100%;
+    
+}
+
+#text-content{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    /* background-color: brown; */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.elem h1{
+    font-size: 135px;
+    font-weight: 200;
+}
+
+#text-content::-webkit-scrollbar{
+background-color: transparent;
+height: 4px;
+    
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    
+}
+
+#img-content{
+    background-color: red;
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#img-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    
+}
